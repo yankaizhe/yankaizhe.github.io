@@ -1,0 +1,83 @@
+
+		<!DOCTYPE html>
+		<html>
+			<head>
+				<meta charset="utf-8">
+				<title></title>
+					<script>
+					function toto(){
+						var hope =	document.getElementById("uname").value;
+					
+						if(hope==""||hope==("请输入你的用户名")){
+							 
+						document.getElementById("uname").value=prompt("用户名不能为空","请输入你的用户名")
+						}
+						
+						
+						}
+						
+						
+						
+						
+					function yanzhen(){
+						var str =new String(document.getElementById("upwd").value);
+						 var length=str.length;
+					
+							if(str==null||length<6||str==""){
+								alert("密码至少六位");
+								
+								
+							}
+						}
+					function xixi(){
+						var str1=new String(document.getElementsByName("pwd1").value);
+						var str2=new String(document.getElementsByName("pwd2").value);
+						
+						if(str1==str2){
+							var flag=false;
+							}else{
+								flag=true;
+							}
+							if(flag)
+						{
+							confirm("两次密码输入不同！！！");
+							
+						}
+						
+						
+							
+						
+						}
+					</script>
+					<style type="text/css">
+						div{
+							background-color: violet;
+							width: 500px;
+							height: 500px;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: space-around;
+						}
+						p{
+							-moz-text-blink: blink;
+						}
+						/* .blink{
+							animation: blink 1s;
+						} */
+					</style>
+			
+			</head>
+			<body>
+				<div id="blink">
+					<p>注册</p>
+				<input type="text" id="uname" placeholder="请在此处输入用户名"
+						  onblur="toto(this)"/>
+				 <input type="password" id="upwd" name="pwd1"placeholder="请在此处输入密码"
+				 		  onblur="yanzhen(this) "/>
+						  <input type="password" id="upwd"name="pwd2" placeholder="请再次确认密码"
+						  		  onblur="yanzhen(this)"/>
+								  <input type="submit" onclick="xixi(this)"/>
+				 </div>
+			</body>
+		</html>

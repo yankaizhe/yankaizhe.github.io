@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		th{
+			
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+			font-size: 30px;
+			color: bisque;
+		}
+		table{
+			margin-top: 100px;
+			padding: 30px;
+			background-color: #55ff7f;
+			color:#663
+		}
+		</style>
+		
+	</head>
+	<body>
+		<form id="userInfo" method="POST" action="">
+			<table align="center" border="6" >
+				<th colspan=2>用户注册</th>
+				<tr>
+					<td>姓名：</td>
+					<td>
+						<input type="text" id="userName" name="userName" 
+						placeholder="请输入你的姓名……" required/>
+					</td>
+				</tr>
+				<tr>
+					<td>年龄 :</td>
+					<td>
+						<input type="number" 
+						id="userAge" name="userAge"
+						max="50" min="18" step="1" 
+						placeholder="请输入"  required/>
+					</td>
+				</tr>
+				<tr>
+					<td>性别：</td>
+					<td>
+						<img src="E:\2022成都东软\JavaWeb\image\man.jpg" 
+						width="20px"
+						height="20px"
+						/>
+						<input type="radio" id="sex" name="sex" value="男"/>男
+						<img src="E:\2022成都东软\JavaWeb\image\woman.jpg" 
+						width="20px"
+						height="20px"
+						 />
+						<input type="radio" id="sex" name="sex" value="女"/>女
+					</td>
+				</tr>
+				<tr>
+					<td>生日：</td>
+					
+					<td>
+					<select id="year">
+						<option>--请选择年份--</option>
+						<option>2003</option>
+						<option>2002</option>
+						<option>2001</option>
+						<option>2000</option>
+						<option>1999</option>
+					</select>
+						
+							<select id="month">
+								<option>--请选择月份--</option>
+								<option>12</option>
+								<option>11</option>
+								<option>10</option>
+								<option>9</option>
+								<option>8</option>
+								<option>7</option>
+								<option>6</option>
+								<option>5</option>
+								<option>4</option>
+								<option>3</option>
+								<option>2</option>
+								<option>1</option>
+							</select>
+					
+							<select id="day">
+								<option>--请选择日--</option>
+								<option>30</option>
+								<option>29</option>
+								<option>28</option>
+								<option>27</option>
+								<option>26</option>
+								<option>25</option>
+								<option>24</option>
+								<option>23</option>
+								<option>22</option>
+								<option>21</option>
+								<option>20</option>
+								<option>19</option>
+								<option>18</option>
+								<option>17</option>
+								<option>16</option>
+								<option>15</option>
+								<option>14</option>
+								<option>13</option>
+								<option>12</option>
+								<option>11</option>
+								<option>10</option>
+								<option>9</option>
+								<option>8</option>
+								<option>7</option>
+								<option>6</option>
+								<option>5</option>
+								<option>4</option>
+								<option>3</option>
+								<option>2</option>
+								<option>1</option>
+							</select>
+						</td>
+				</tr>
+				
+				<tr>
+					<td>爱好：</td>
+					<td>
+						<input type="checkbox" id="hobby" name="hobby" >阅读
+						<input type="checkbox" id="hobby" name="hobby" >跑步
+						<input type="checkbox" id="hobby" name="hobby" >游泳
+						<input type="checkbox" id="hobby" name="hobby" >上网
+						<input type="checkbox" id="hobby" name="hobby" >篮球
+					</td>
+				</tr>
+				<tr>
+					<td>
+						个人介绍:
+					</td>
+					<td>
+						<textarea name="myinfo" id="myinfo" 
+						rows="10" cols="35"
+					
+						style="overflow-y: scroll; background-color:#aaffff"
+						placeholder="请你输入个人介绍……"
+						required
+						></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<input type="checkbox"/>我同意信息录入
+					</td>
+				</tr>
+				<tr >
+					
+					<td colspan="2" align="center">
+						<input type="submit" value="立即注册" onclick=""/>
+						<input type="reset" value="重新输入" onclick=""/>
+						
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

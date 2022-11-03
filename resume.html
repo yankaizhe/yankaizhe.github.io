@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			
+			function disPlayy(){
+				var str1=document.getElementById("uname").value;
+				 if(str1==""||str1.length==0)
+				 document.getElementById('lin1').innerHTML="***用户名不能为空";
+				 else document.getElementById('lin1').innerHTML="pass";
+			}
+			
+			
+			
+			
+			function yanzhen(){
+				var str2=document.getElementById('upwd').value;
+				if(str2==""||str2.length<=5){
+					 document.getElementById('lin2').innerHTML="***密码不能小于六位";
+					 }
+					 else {document.getElementById('lin2').innerHTML="pass";
+				}
+				}
+			
+			function show(obj){
+				var tt=obj.value;
+				if(tt=="男"||tt=="女"){
+					document.getElementById("lin3").innerHTML=tt;
+				}
+				else{
+					document.getElementById("lin4").innerHTML=tt;
+				}
+			}
+			
+		</script>
+		
+			
+		<style>
+			table{
+				margin: 100pt;
+				padding: 20pt;
+				background: linear-gradient(to right,#951699 30%,#491066 50%,#90466a);
+				outline-style:dotted;
+				outline-color: royalblue;		
+			}
+			
+			
+		</style>	
+			
+		
+		
+		</script>
+		
+	</head>
+	<body>
+<div>
+	<form>
+		<table>
+			<tr>
+				<td>
+					姓名:
+				</td>
+				<td>
+					<input type="text"id="uname" onblur="disPlayy()"/>
+					
+				</td>
+				<td id="lin1">
+					
+				</td>
+			</tr>
+			<tr>
+				<td>
+					密码:
+				</td>
+				<td>
+					<input type="password" id="upwd" onblur="yanzhen()"/>
+					
+				</td>
+				<td id="lin2">
+					</td>
+			</tr>
+			<tr>
+				<td>
+					性别:
+				</td>
+				<td>
+					<input type="radio" id="sex" value="男"onfocus="show(this)">男
+					<input type="radio"id="sex" value="女" onfocus="show(this)"/>女
+				</td>
+				<td id="lin3"></td>
+			</tr>
+			<tr>
+				<td>
+					血型:
+				</td>
+				<td>
+					<input type="radio" value="O" onfocus="show(this)"/>O
+					<input type="radio" value="A" onfocus="show(this)"/>A
+					<input type="radio" value="B" onfocus="show(this)"/>B
+					<input type="radio" value="AB" onfocus="show(this)"/>AB
+					
+				</td>
+				<td id="lin4">
+					
+				</td>
+			</tr>
+			<tr>
+				<td>
+					性格:
+				</td>
+				<td>
+					<input type="checkbox"/>热情大方
+					<input type="checkbox"/>温柔体贴
+					<input type="checkbox"/>多情善感
+				</td>
+			</tr>
+			<tr>
+				<td>
+					文件：
+				</td>
+				<td>
+					<input type="file"/>
+					
+				</td>
+			</tr>
+			<tr>
+				<td>
+					简介:
+				</td>
+				<td>
+					<textarea name="myinfo" id="myinfo"
+					style="overflow-y: scroll;"
+					rows="10" cols="35"
+					required
+					></textarea>
+				</td>
+				<tr>
+					<td>
+						城市:
+					</td>
+					<td>
+						<select>
+							<option>北京市</option>
+							<option>成都市</option>
+							<option>洛杉矶</option>
+							<option>东京</option>
+							<option>平壤</option>
+						</select>
+					</td>
+				</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" placeholder="提交"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			# MyTextarea{
+				type="textarea"
+				rows=5 cols=30
+			}
+		</style>
+	</head>
+	<body>
+		 <form type="text" id="time" value="" method="post"/>
+		<label for=username>姓名</label> 
+		<input type="text" required>
+		<br>
+		<label for="age" required>年龄</label>
+		<input type="number" max="30" min="18" step=1 requied>
+		<br>
+		<label for="">出生日期</label>
+		<input type="month" placeholder="请输入"
+		max="2005-01-01" min="1999-01-01"
+		pattern=(0000-00-00)
+		required>
+		<br/>
+		<label for=email>Email</label>
+		<input type="email" >
+		<br/>
+		<label for=myWeb>个人主页</label>
+		<input type="url" required>
+		<br/>
+		<label >个人简介</label>
+	    <textarea id=MyTextarea rows=5 cols=30></textarea> 
+		<br>
+		
+
+
+		 <input type=submit id="time">
+		
+	
+	</body>
+</html>

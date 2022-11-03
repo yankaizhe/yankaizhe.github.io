@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+			<script>
+				function change(){
+					confirm("2022年不要放弃啊")
+					
+				}
+				function toto(){
+				var hope =	document.getElementById("massage").value
+				
+				if(hope==""){
+					confirm("许您一个愿望吧")
+				}
+				else{confirm(hope);
+				
+				}
+				
+				}
+			
+				
+			</script>
+			<style type="text/css">
+				div{
+					background-color: violet;
+					width: 500px;
+					height: 500px;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-around;
+				}
+				p{
+					-moz-text-blink: blink;
+				}
+				/* .blink{
+					animation: blink 1s;
+				} */
+			</style>
+	
+	</head>
+	<body>
+		<div id="blink">
+			<p>许愿墙</p>
+		<input type="text" id="massage" placeholder="请在此处输入你的心愿"
+		 onchange="change()" onblur="toto()">
+		 
+		 </div>
+	</body>
+</html>

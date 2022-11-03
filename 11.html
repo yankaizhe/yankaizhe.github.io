@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		
+		<script type="text/javascript">
+			function copyy(){
+				var str1=document.getElementById("no1").value;
+				document.getElementById("no2").value =str1;	
+					
+					var para=document.createElement("p")
+					var node =document.createTextNode("复制成功")
+					para.appendChild(node);
+					var element=document.getElementById("div1");
+					element.appendChild(para)
+					
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+		<div id=div1>
+		<input type="text" id="no1"/>
+		<input type="button" value="复制" onclick="copyy()"/>
+		<input type="text" id="no2"/>
+		</div>
+	</body>
+</html>
